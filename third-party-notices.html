@@ -16,16 +16,16 @@
 
     <section>
       <h2>Notice</h2>
-      <p>This page is a release checklist draft. Confirm each license, source URL, and redistribution right before publishing the App Store build.</p>
+      <p>SonaCap includes third-party software and model assets used for local speech recognition fallback and speech enhancement. Those components remain owned by their respective authors and are subject to their own license terms.</p>
     </section>
 
     <section>
-      <h2>Libraries and Model Assets to Audit</h2>
+      <h2>Current Bundled or Linked Components</h2>
       <ul>
-        <li>WhisperKit / Argmax OSS Swift package.</li>
-        <li>OpenAI Whisper base model assets bundled with the app.</li>
-        <li>DeepFilterNet3 Core ML model assets bundled with the app.</li>
-        <li>Any converted model files or tokenizer files distributed with the app.</li>
+        <li>WhisperKit / Argmax OSS Swift package, including its upstream notices.</li>
+        <li>OpenAI Whisper base model assets bundled with the app for local fallback speech recognition.</li>
+        <li>DeepFilterNet3 Core ML model assets bundled with the app for speech enhancement experiments and fallback processing.</li>
+        <li>Related bundled model files, tokenizer files, and converted Core ML model files required by those components.</li>
       </ul>
     </section>
 
@@ -33,6 +33,11 @@
       <h2>Not Included in Current iOS Notices</h2>
       <p>RNNoise was removed from the active package targets and source tree because the iOS app no longer links or imports it.</p>
       <p>swift-argument-parser may appear in package resolution, but it is not linked into the iOS app target today.</p>
+    </section>
+
+    <section>
+      <h2>Missing or Updated Notices</h2>
+      <p>If you believe an attribution or license notice is missing or outdated, contact <a href="mailto:sonacap.support@gmail.com">sonacap.support@gmail.com</a> so it can be reviewed and corrected.</p>
     </section>
 
     <section>

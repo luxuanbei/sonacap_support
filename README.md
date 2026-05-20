@@ -1,6 +1,6 @@
-# SonaCap / 声幕 Support Site Draft
+# SonaCap / 声幕 Support Site
 
-This folder is a static GitHub Pages draft for:
+This folder is a static GitHub Pages support site for:
 
 - `https://luxuanbei.github.io/sonacap_support/`
 
