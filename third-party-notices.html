@@ -16,17 +16,37 @@
 
     <section>
       <h2>Notice</h2>
-      <p>SonaCap includes third-party software and model assets used for local speech recognition fallback and speech enhancement. Those components remain owned by their respective authors and are subject to their own license terms.</p>
+      <p>SonaCap includes third-party software and model assets used for optional local speech recognition fallback. Those components remain owned by their respective authors and are subject to their own license terms.</p>
+      <p>This page summarizes the third-party components currently bundled with, linked by, or materially used by the iOS app. Components that were tested during development but are not included in the app, such as RNNoise, are not listed here.</p>
     </section>
 
     <section>
       <h2>Current Bundled or Linked Components</h2>
-      <ul>
-        <li>WhisperKit / Argmax OSS Swift package, including its upstream notices.</li>
-        <li>OpenAI Whisper base model assets bundled with the app for local fallback speech recognition.</li>
-        <li>DeepFilterNet3 Core ML model assets bundled with the app for speech enhancement experiments and fallback processing.</li>
-        <li>Related bundled model files, tokenizer files, and converted Core ML model files required by those components.</li>
-      </ul>
+      <article>
+        <h3>WhisperKit / Argmax OSS Swift</h3>
+        <p>Use: optional local speech recognition fallback when Apple Speech has difficulty recognizing audio.</p>
+        <p>Source: <a href="https://github.com/argmaxinc/argmax-oss-swift">argmaxinc/argmax-oss-swift</a></p>
+        <p>License: MIT License. The Argmax OSS project also includes upstream notices for components derived from Hugging Face swift-transformers under Apache License 2.0.</p>
+        <p>MIT notice: Copyright (c) 2024 argmax, inc. Permission is granted to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software subject to the MIT License terms, including preservation of the copyright and permission notice.</p>
+      </article>
+
+      <article>
+        <h3>OpenAI Whisper Base Model Assets</h3>
+        <p>Use: model and tokenizer assets used by WhisperKit for optional local fallback speech recognition.</p>
+        <p>Source: OpenAI Whisper base model assets converted for Core ML through <a href="https://huggingface.co/argmaxinc/whisperkit-coreml">argmaxinc/whisperkit-coreml</a>; original model reference: <a href="https://github.com/openai/whisper">openai/whisper</a>.</p>
+        <p>License: OpenAI's Whisper repository states that Whisper code and model weights are released under the MIT License. The Hugging Face model card for openai/whisper-base lists Apache License 2.0. SonaCap preserves both source references for the bundled converted model assets.</p>
+        <p>MIT notice: Copyright (c) 2022 OpenAI. Permission is granted to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software subject to the MIT License terms, including preservation of the copyright and permission notice.</p>
+      </article>
+
+      <article>
+        <h3>Apple System Frameworks</h3>
+        <p>SonaCap uses Apple platform frameworks such as Speech, Translation, ReplayKit, WebKit, Core ML, AVFoundation, StoreKit, and SwiftUI. These are provided by Apple as part of the Apple developer platform and are governed by Apple's developer agreements and platform terms.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Development-only or Not Bundled</h2>
+      <p>Swift Argument Parser may appear in local Swift Package resolution because it is used by command-line tools in upstream packages, but it is not linked into the SonaCap iOS app target. RNNoise was evaluated during development and removed from the app before release.</p>
     </section>
 
     <section>
