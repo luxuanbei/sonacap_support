@@ -11,7 +11,7 @@
     <header class="hero">
       <p class="eyebrow">SonaCap / 声幕</p>
       <h1>Support</h1>
-      <p class="summary">Help for realtime audio subtitles, translation, the built-in browser, and purchases.</p>
+      <p class="summary">Help for realtime audio subtitles, translation, iPhone built-in browser features, and purchases. Available on iPhone and Mac. (Mac version does not include a built-in browser.)</p>
     </header>
 
     <section>
@@ -20,22 +20,26 @@
         For support, bug reports, feedback, feature requests, or purchase questions,
         email <a href="mailto:sonacap.support@gmail.com">sonacap.support@gmail.com</a>.
       </p>
-      <p>Please include your device model, iOS/iPadOS version, app version, and a short description of what happened.</p>
+      <p>Please include your device model, OS version (iOS or macOS), app version, and a short description of what happened.</p>
     </section>
 
     <section>
       <h2>Common Help</h2>
       <details open>
-        <summary>What iOS version do I need?</summary>
-        <p>SonaCap's first iPhone release requires iOS 26 or later. Realtime translation depends on Apple's Translation framework and system-managed language resources, and iOS 26 provided the stable translation behavior used for this release.</p>
+        <summary>What system version do I need?</summary>
+        <p>The iPhone release of SonaCap requires iOS 26 or later. The Mac release requires macOS 14.2 or later. Realtime translation depends on Apple's Translation framework and system-managed language resources.</p>
       </details>
       <details open>
-        <summary>How do I start realtime audio translation?</summary>
-        <p>Open SonaCap, choose input and output languages, tap the Broadcast button, select SonaCap Capture, and start Broadcast. Then play audio in the built-in browser or another app while SonaCap remains open.</p>
+        <summary>How do I start realtime audio translation? (iPhone)</summary>
+        <p>On iPhone, open SonaCap, choose input and output languages, tap the Broadcast button, select SonaCap Capture, and start Broadcast. Then play audio in the built-in browser or another app while SonaCap remains open. iOS uses a Broadcast Upload Extension because apps cannot directly capture other apps' audio. The built-in browser is an iPhone feature and is not available on Mac.</p>
+      </details>
+      <details open>
+        <summary>How do I start realtime audio translation? (Mac)</summary>
+        <p>On Mac, SonaCap captures system audio directly through macOS — no Broadcast step is required. Open SonaCap, choose input and output languages, and start capture. The first time, macOS will ask you to grant Screen Recording (system audio) permission in System Settings &gt; Privacy &amp; Security.</p>
       </details>
       <details>
         <summary>Why do captions sometimes lag or miss words?</summary>
-        <p>Speech recognition and translation quality can be affected by audio quality, background noise, language choice, device performance, iOS Broadcast behavior, Apple Speech, Apple Translation, and local fallback models.</p>
+        <p>Speech recognition and translation quality can be affected by audio quality, background noise, language choice, device performance, iOS Broadcast behavior (iPhone) or system audio capture (Mac), Apple Speech, Apple Translation, and local fallback models.</p>
       </details>
       <details>
         <summary>Is speech recognition local?</summary>
@@ -48,7 +52,7 @@
       </details>
       <details>
         <summary>Does webpage text translation count toward the audio trial?</summary>
-        <p>No. Webpage text translation is separate from realtime audio subtitle translation. Realtime audio subtitles include 5 cumulative free minutes before SonaCap Unlock is required.</p>
+        <p>No. On iPhone, webpage text translation in the built-in browser is separate from realtime audio subtitle translation. The Mac version does not include a built-in browser. Realtime audio subtitles include 5 cumulative free minutes before SonaCap Unlock is required.</p>
       </details>
       <details>
         <summary>How do I restore a purchase?</summary>
